@@ -1,0 +1,79 @@
+body {
+    background-image: url(../images/wavy-dots/wavy-dots.png);
+    background-repeat: repeat;
+}
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    right: 0;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 35px 0;
+}
+
+h1 {
+    position: absolute;
+}
+
+.myName {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    background-color: #4aaaa5;
+    color: #fff;
+    border-bottom: 2px solid #ccc;
+    padding: 25px 10px;
+}
+
+.links {
+    position: absolute;
+    right: 25%;
+    top: 25px;
+}
+
+.title {
+    position: relative;
+    top: 10px;
+}
+
+.middleLink {
+    border-left: 1.5px solid;
+    border-right: 1.5px solid;
+    border-color: rgba(0, 0, 0, .25);
+    padding: 0 3px;
+}
+h1, h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+div, footer {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+.textBox {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    margin: 25px 25%;
+    box-sizing: border-box;
+    height: 960px;
+    padding: 25px 25px;
+}
+
+.profilePic {
+   float: left;
+}
+
+.profilePic:after {
+    clear: both;
+}
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
