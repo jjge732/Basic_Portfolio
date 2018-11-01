@@ -1,6 +1,7 @@
 body {
     background-image: url(../images/wavy-dots/wavy-dots.png);
     background-repeat: repeat;  /*causes image to spread across screen*/
+    min-height: 1000px;
 }
 
 header {
@@ -76,13 +77,15 @@ div, footer {
 div {
     box-sizing: border-box;
 }
+
 .textBox {
     background-color: #fff;
     border: 2px solid rgba(86.7%, 86.7%, 86.7%, .25); /*converted #ddd to rgba so I could make the border opaque*/
     margin: 25px 25%;
     box-sizing: border-box;
-    height: 960px;  /*last line and this one make it actually 960px*/
+    width: 960px;  /*last line and this one make it actually 960px*/
     padding: 25px 25px;
+    min-height: 400px;
 }
 
 .text {
@@ -147,9 +150,9 @@ textarea {
 footer {
     background-color: rgb(97, 97, 97);  /*rgb easier to use offline*/
     width: 100%;
-    position: relative;
+    position: fixed;
     bottom: 0;
-    padding-top: 80px;
+    padding-top: 70px;
     height: 30px;
     text-align: center;
     color: #ccc;
