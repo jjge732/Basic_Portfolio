@@ -3,6 +3,7 @@ body {
     background-repeat: repeat;  /*causes image to spread across screen*/
     min-height: 1000px;
     position: relative;
+    font-size: 18px;
 }
 
 header {
@@ -35,7 +36,7 @@ h1 {
     background-color: #4aaaa5;
     color: #fff;
     border-bottom: 2px solid #ccc;
-    padding: 27px 10px; /*made it flush by eye*/
+    padding: 26px 10px; /*made it flush by eye*/
 }
 
 .links {
@@ -108,6 +109,10 @@ div {
 
 p, h2 {
     margin-top: 35px;
+}
+
+p {
+    text-indent: 50px;
 }
 
 .button {
