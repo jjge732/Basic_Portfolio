@@ -2,17 +2,26 @@ body {
     background-image: url(../images/wavy-dots/wavy-dots.png);
     background-repeat: repeat;
 }
+
 header {
     position: sticky;
     position: -webkit-sticky;
     right: 0;
     background-color: #fff;
     border: 2px solid #ccc;
+    border-left: 0;
+    border-right: 0;
     padding: 35px 0;
+    font-weight: bold;
+}
+
+section {
+    color: #777;
 }
 
 h1 {
     position: absolute;
+    font-size: 24px;
 }
 
 .myName {
@@ -21,8 +30,8 @@ h1 {
     top: 0;
     background-color: #4aaaa5;
     color: #fff;
-    border-bottom: 2px solid #ccc;
-    padding: 25px 10px;
+    border-bottom: 3px solid #ccc;
+    padding: 27px 10px;
 }
 
 .links {
@@ -31,19 +40,31 @@ h1 {
     top: 25px;
 }
 
+a {
+    color: #aaa;
+}
+
 .title {
     position: relative;
+    color: #4aaaa5;
     top: 10px;
+    height: 50px;
+    margin: 0;
+    border-bottom: 3px solid #ccc;
+    border-color: rgba(86.7%, 86.7%, 86.7%, .75)
 }
 
 .middleLink {
     border-left: 1.5px solid;
     border-right: 1.5px solid;
     border-color: rgba(0, 0, 0, .25);
-    padding: 0 3px;
+    margin: 3px;
+    padding: 0 8px;
 }
+
 h1, h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
 }
 
 div, footer {
@@ -55,25 +76,37 @@ div {
 }
 .textBox {
     background-color: #fff;
-    border: 2px solid #ddd;
+    border: 2px solid rgba(86.7%, 86.7%, 86.7%, .25);
     margin: 25px 25%;
     box-sizing: border-box;
     height: 960px;
     padding: 25px 25px;
 }
 
-.profilePic {
-   float: left;
+.text {
+    line-height: 30px;
 }
 
-.profilePic:after {
+.profilePic {
+   float: left;
+   margin-right: 20px;
+}
+
+p {
+    margin-top: 35px;
+}
+
+.profilePic:before, .profilePic:after {
     clear: both;
 }
 
 footer {
-    background-color: #fff;
+    background-color: rgb(97, 97, 97);
     width: 100%;
     position: relative;
     bottom: 0;
+    padding-top: 100px;
     text-align: center;
+    color: #ccc;
+    border-top: 8px solid #4aaaa5;
 }
