@@ -1,18 +1,20 @@
 body {
     background-image: url(../images/wavy-dots/wavy-dots.png);
-    background-repeat: repeat;
+    background-repeat: repeat;  /*causes image to spread across screen*/
 }
 
 header {
     position: sticky;
-    position: -webkit-sticky;
+    position: -webkit-sticky;   /*makes usable on safari*/
     right: 0;
+    top: 0; /*necessary to work apparently*/
     background-color: #fff;
     border: 2px solid #ccc;
     border-left: 0;
     border-right: 0;
     padding: 35px 0;
     font-weight: bold;
+    z-index: 3; /*ensures header won't render under images in the portfolio*/
 }
 
 section {
@@ -26,22 +28,22 @@ h1 {
 
 .myName {
     position: absolute;
-    left: 25%;
+    left: 25%;  /*same as edge of box below*/
     top: 0;
     background-color: #4aaaa5;
     color: #fff;
     border-bottom: 2px solid #ccc;
-    padding: 27px 10px;
+    padding: 27px 10px; /*made it flush by eye*/
 }
 
 .links {
-    position: absolute;
+    position: absolute; /*same as edge of box below*/
     right: 25%;
     top: 25px;
 }
 
 a {
-    color: #aaa;
+    color: #aaa;    /*changes link color*/
 }
 
 .title {
@@ -51,10 +53,10 @@ a {
     height: 50px;
     margin: 0;
     border-bottom: 3px solid #ccc;
-    border-color: rgba(86.7%, 86.7%, 86.7%, .75)
+    border-color: rgba(86.7%, 86.7%, 86.7%, .75) /*semi-transparent border*/
 }
 
-.middleLink {
+.middleLink {   /*created lines between the 3 links*/
     border-left: 1.5px solid;
     border-right: 1.5px solid;
     border-color: rgba(0, 0, 0, .25);
@@ -76,10 +78,10 @@ div {
 }
 .textBox {
     background-color: #fff;
-    border: 2px solid rgba(86.7%, 86.7%, 86.7%, .25);
+    border: 2px solid rgba(86.7%, 86.7%, 86.7%, .25); /*converted #ddd to rgba so I could make the border opaque*/
     margin: 25px 25%;
     box-sizing: border-box;
-    height: 960px;
+    height: 960px;  /*last line and this one make it actually 960px*/
     padding: 25px 25px;
 }
 
@@ -87,14 +89,17 @@ div {
     line-height: 30px;
 }
 
-.profilePic {
+.profilePic {   /*I floated the image so the text would wrap around it in a pleasing way*/
    float: left;
    margin-right: 20px;
+   width: 50%;
+   height: auto;    /*prevents distortion of the image*/
+   max-width: 240px;    /*stops the user from seeing a very pixelated image*/
 }
 
 
 .profilePic:before, .profilePic:after {
-    clear: both;
+    clear: both;    /*wanted to make sure the float was cleared*/
 }
 
 p, h2 {
@@ -103,13 +108,13 @@ p, h2 {
 
 .button {
     background-color: #4aaaa5;
-    border: none;
+    border: none;       /*wasn't a fan of the way the border looked on the page*/
     padding: 5px 15px;
     color: #fff;
 }
 
 img {
-    z-index: 1;
+    z-index: 1; /*not really necessary*/
 }
 
 .image_container {
@@ -118,7 +123,7 @@ img {
 }
 
 .images, .caption {
-    width: 66.6%;
+    width: 66.6%;   /*this is based off table cells*/
     height: auto;
  }
 
@@ -126,16 +131,21 @@ img {
     position: absolute;
     bottom: 10%;
     background-color: #4aaaa5;
-    height: 1000000000px; 
+    height: 20%; /*wanted to default to max height*/
     padding: 5% 0;
-    max-height: 20%; /*total height will always be 30% of image height*/
     color: #fff;
     text-align: center;
-    z-index: absolute;
+    z-index: 2; /*makes sure captions are on top of the image*/
+    /*typoed absolute instead of 2 the first time and it worked*/
+}
+
+textarea {
+    border: 2px solid #ccc;
+    width: 100%;
 }
 
 footer {
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(97, 97, 97);  /*rgb easier to use offline*/
     width: 100%;
     position: relative;
     bottom: 0;
