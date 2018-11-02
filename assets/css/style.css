@@ -72,11 +72,11 @@ h1, h2 {
     font-weight: bold;
 }
 
-div, footer {
+:not(h1, h2) {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-div {
+div, article {
     box-sizing: border-box;
 }
 
@@ -158,9 +158,14 @@ footer {
     width: 100%;
     position: absolute;
     bottom: -25px;
-    padding-top: 70px;
-    height: 30px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    height: 90px;
     text-align: center;
     color: #ccc;
     border-top: 8px solid #4aaaa5;
+}
+
+.logo {
+    margin: 0 1px 0 7px; /*unequal margins allowed centering of images*/
 }
