@@ -49,6 +49,10 @@ a {
     color: #aaa;    /*changes link color*/
 }
 
+a:hover {
+    color: #DD524A;
+}
+
 .title {
     position: relative;
     color: #4aaaa5;
@@ -122,6 +126,10 @@ p {
     color: #fff;
 }
 
+.button:hover {
+    background-color: #DD524A;
+}
+
 img {
     z-index: 1; /*not really necessary*/
 }
@@ -136,16 +144,21 @@ img {
     height: auto;
  }
 
-.caption {
+.caption {  /*unnecessary class - could have just used the figca*/
     position: absolute;
     bottom: 10%;
     background-color: #4aaaa5;
     height: 20%; /*wanted to default to max height*/
     padding: 5% 0;
     color: #fff;
+    font-weight: bold;
     text-align: center;
     z-index: 2; /*makes sure captions are on top of the image*/
     /*typoed absolute instead of 2 the first time and it worked*/
+}
+
+.caption:hover {
+    color: #F6DB5F;
 }
 
 textarea {
