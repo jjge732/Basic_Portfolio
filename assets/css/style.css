@@ -167,7 +167,7 @@ textarea {
 }
 
 footer {
-    background-color: rgb(97, 97, 97);  /*rgb easier to use offline*/
+    background-color: #666;  /*rgb easier to use offline*/
     width: 100%;
     position: absolute;
     bottom: -25px;
