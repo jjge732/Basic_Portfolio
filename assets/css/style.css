@@ -47,6 +47,7 @@ h1 {
 
 a {
     color: #aaa;    /*changes link color*/
+    text-decoration: none;
 }
 
 a:hover {
@@ -87,7 +88,7 @@ div, article {
 .textBox {
     background-color: #fff;
     border: 2px solid rgba(86.7%, 86.7%, 86.7%, .25); /*converted #ddd to rgba so I could make the border opaque*/
-    margin: 25px 25%;
+    margin: 25px auto;
     box-sizing: border-box;
     width: 960px;  /*last line and this one make it actually 960px*/
     padding: 25px 25px;
@@ -162,12 +163,12 @@ img {
 }
 
 textarea {
-    border: 2px solid #ccc;
+    border: 2px solid #ddd;
     width: 100%;
 }
 
 footer {
-    background-color: #666;  /*rgb easier to use offline*/
+    background-color: #666;
     width: 100%;
     position: absolute;
     bottom: -25px;
